@@ -29,12 +29,17 @@ public class Principal {
         t3.establecerPrecio(2300.5);
 
         ArrayList<Televisor> tvs = new ArrayList<>();
+        
         tvs.add(t1);
         tvs.add(t2);
         tvs.add(t3);
-        System.out.println("-----------------");
-        System.out.printf("%.2f\n", t1.totalPrecioTvs(tvs));
-        System.out.printf("%s\n", t1.listaMarcasVendidas(tvs));
-
+        
+        OperacionesTelevisor operaciones = new OperacionesTelevisor();
+        operaciones.establecertelevisor(tvs);
+        operaciones.establecertotalPrecioTvs();
+        operaciones.establecerlistaMarcasVendidas();
+        operaciones.establecertelevisorMasCaro();
+        
+        System.out.println(operaciones);
     }
 }

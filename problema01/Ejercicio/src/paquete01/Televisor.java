@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class Televisor {
 
-    private String marca;
-    private double precio;
+    public String marca;
+    public double precio;
     
     public void establecerMarca(String m){
         marca = m;
@@ -32,6 +32,7 @@ public class Televisor {
         return precio;
     }
     
+    /*
     public double totalPrecioTvs(ArrayList<Televisor> t){
         double s = 0;
         for (int i = 0; i < t.size(); i++) {
@@ -54,6 +55,7 @@ public class Televisor {
         }
         return s;
     }
+    */
     
     @Override
     public String toString(){
@@ -61,6 +63,5 @@ public class Televisor {
                 obtenerMarca(),
                 obtenerPrecio());
     }
-    
-    
+   
 }
