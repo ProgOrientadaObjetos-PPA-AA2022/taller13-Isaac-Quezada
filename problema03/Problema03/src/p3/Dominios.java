@@ -3,20 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package p1;
+package p3;
 
 /**
  *
  * @author Matias Quezada
  */
-public abstract class Matricula {
+public interface Dominios {
     
-    protected double tarifa;
+    public void establecerDominio(String domi);
     
-    public abstract void establecerTarifa();
-    
-    public double obtenerTarifa(){
-        return tarifa;
-    }
+    public String obtenerDominio();
 }
-
